@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		D8F8E2891AC5163800A6DA73 /* Lines.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F8E2881AC5163800A6DA73 /* Lines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8F8E2941AC5163800A6DA73 /* Lines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F8E2831AC5163800A6DA73 /* Lines.framework */; };
-		D8F8E29B1AC5163800A6DA73 /* LinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E29A1AC5163800A6DA73 /* LinesTests.swift */; };
+		D8F8E29B1AC5163800A6DA73 /* EditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E29A1AC5163800A6DA73 /* EditorTests.swift */; };
+		D8F8E2A51AC51A3200A6DA73 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2A41AC51A3200A6DA73 /* Editor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,8 @@
 		D8F8E2881AC5163800A6DA73 /* Lines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lines.h; sourceTree = "<group>"; };
 		D8F8E2931AC5163800A6DA73 /* LinesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8E2991AC5163800A6DA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8F8E29A1AC5163800A6DA73 /* LinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesTests.swift; sourceTree = "<group>"; };
+		D8F8E29A1AC5163800A6DA73 /* EditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTests.swift; sourceTree = "<group>"; };
+		D8F8E2A41AC51A3200A6DA73 /* Editor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D8F8E2861AC5163800A6DA73 /* Supporting Files */,
+				D8F8E2A41AC51A3200A6DA73 /* Editor.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -88,7 +91,7 @@
 		D8F8E2971AC5163800A6DA73 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				D8F8E29A1AC5163800A6DA73 /* LinesTests.swift */,
+				D8F8E29A1AC5163800A6DA73 /* EditorTests.swift */,
 				D8F8E2981AC5163800A6DA73 /* Supporting Files */,
 			);
 			path = Test;
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F8E2A51AC51A3200A6DA73 /* Editor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F8E29B1AC5163800A6DA73 /* LinesTests.swift in Sources */,
+				D8F8E29B1AC5163800A6DA73 /* EditorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +322,7 @@
 		D8F8E29F1AC5163800A6DA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -329,12 +334,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D8F8E2A01AC5163800A6DA73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
