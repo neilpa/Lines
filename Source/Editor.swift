@@ -25,6 +25,21 @@ public struct Editor {
     }
 
 
+    /// Applies `movement` to the receiver
+    public mutating func move(movement: Movement) {
+        switch movement {
+        case .Left:  self.left()
+        case .Right: self.right()
+        case .Home:  self.home()
+        case .End:   self.end()
+        }
+    }
+
+    /// Applies `movement` to the receiver `count` times
+    public mutating func move(movement: Movement, _ count: Int) {
+        map(0..<count) { _ in self.move(movement) }
+    }
+
     /// Move backward one character if `head` is non-empty
     public mutating func left() {
         if let char = dropLast(&head) {

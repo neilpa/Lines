@@ -81,11 +81,11 @@ final class EditorTests: XCTestCase {
         editor.clearEnd()
         verify(editor, "foobar", "")
 
-        editor.left(); editor.left();
+        editor.move(.Left, 2);
         editor.clearEnd()
         verify(editor, "foob", "")
 
-        editor.left(); editor.left();
+        editor.move(.Left, 2)
         editor.clearHome()
         verify(editor, "", "ob")
 
