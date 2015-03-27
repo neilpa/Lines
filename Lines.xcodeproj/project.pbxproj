@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D8F8E2891AC5163800A6DA73 /* Lines.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F8E2881AC5163800A6DA73 /* Lines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8F8E28B1AC5163800A6DA73 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8F8E28A1AC5163800A6DA73 /* .gitignore */; };
-		D8F8E28E1AC5163800A6DA73 /* Lines.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = D8F8E28D1AC5163800A6DA73 /* Lines.xcworkspace */; };
 		D8F8E2941AC5163800A6DA73 /* Lines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F8E2831AC5163800A6DA73 /* Lines.framework */; };
 		D8F8E29B1AC5163800A6DA73 /* LinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E29A1AC5163800A6DA73 /* LinesTests.swift */; };
 /* End PBXBuildFile section */
@@ -28,9 +26,6 @@
 		D8F8E2831AC5163800A6DA73 /* Lines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8E2871AC5163800A6DA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8E2881AC5163800A6DA73 /* Lines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lines.h; sourceTree = "<group>"; };
-		D8F8E28A1AC5163800A6DA73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		D8F8E28C1AC5163800A6DA73 /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
-		D8F8E28D1AC5163800A6DA73 /* Lines.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Lines.xcworkspace; sourceTree = SOURCE_ROOT; };
 		D8F8E2931AC5163800A6DA73 /* LinesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F8E2991AC5163800A6DA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F8E29A1AC5163800A6DA73 /* LinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesTests.swift; sourceTree = "<group>"; };
@@ -58,8 +53,8 @@
 		D8F8E2791AC5163800A6DA73 = {
 			isa = PBXGroup;
 			children = (
-				D8F8E2851AC5163800A6DA73 /* Lines */,
-				D8F8E2971AC5163800A6DA73 /* LinesTests */,
+				D8F8E2851AC5163800A6DA73 /* Source */,
+				D8F8E2971AC5163800A6DA73 /* Test */,
 				D8F8E2841AC5163800A6DA73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,33 +68,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8F8E2851AC5163800A6DA73 /* Lines */ = {
+		D8F8E2851AC5163800A6DA73 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D8F8E2881AC5163800A6DA73 /* Lines.h */,
-				D8F8E28A1AC5163800A6DA73 /* .gitignore */,
-				D8F8E28C1AC5163800A6DA73 /* LICENCE */,
-				D8F8E28D1AC5163800A6DA73 /* Lines.xcworkspace */,
 				D8F8E2861AC5163800A6DA73 /* Supporting Files */,
 			);
-			path = Lines;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		D8F8E2861AC5163800A6DA73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8F8E2881AC5163800A6DA73 /* Lines.h */,
 				D8F8E2871AC5163800A6DA73 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D8F8E2971AC5163800A6DA73 /* LinesTests */ = {
+		D8F8E2971AC5163800A6DA73 /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				D8F8E29A1AC5163800A6DA73 /* LinesTests.swift */,
 				D8F8E2981AC5163800A6DA73 /* Supporting Files */,
 			);
-			path = LinesTests;
+			path = Test;
 			sourceTree = "<group>";
 		};
 		D8F8E2981AC5163800A6DA73 /* Supporting Files */ = {
@@ -200,8 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F8E28E1AC5163800A6DA73 /* Lines.xcworkspace in Resources */,
-				D8F8E28B1AC5163800A6DA73 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +324,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Lines/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,7 +341,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Lines/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,7 +361,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LinesTests/Info.plist;
+				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -386,7 +376,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LinesTests/Info.plist;
+				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -411,6 +401,7 @@
 				D8F8E2A01AC5163800A6DA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F8E2A11AC5163800A6DA73 /* Build configuration list for PBXNativeTarget "LinesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +410,7 @@
 				D8F8E2A31AC5163800A6DA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
