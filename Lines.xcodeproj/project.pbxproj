@@ -12,6 +12,7 @@
 		D8F8E29B1AC5163800A6DA73 /* EditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E29A1AC5163800A6DA73 /* EditorTests.swift */; };
 		D8F8E2A51AC51A3200A6DA73 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2A41AC51A3200A6DA73 /* Editor.swift */; };
 		D8F8E2A71AC52ABC00A6DA73 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2A61AC52ABC00A6DA73 /* Movement.swift */; };
+		D8F8E2A91AC52E8B00A6DA73 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2A81AC52E8B00A6DA73 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		D8F8E29A1AC5163800A6DA73 /* EditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTests.swift; sourceTree = "<group>"; };
 		D8F8E2A41AC51A3200A6DA73 /* Editor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
 		D8F8E2A61AC52ABC00A6DA73 /* Movement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		D8F8E2A81AC52E8B00A6DA73 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +77,10 @@
 		D8F8E2851AC5163800A6DA73 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D8F8E2861AC5163800A6DA73 /* Supporting Files */,
+				D8F8E2A81AC52E8B00A6DA73 /* Character.swift */,
 				D8F8E2A41AC51A3200A6DA73 /* Editor.swift */,
 				D8F8E2A61AC52ABC00A6DA73 /* Movement.swift */,
+				D8F8E2861AC5163800A6DA73 /* Supporting Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F8E2A71AC52ABC00A6DA73 /* Movement.swift in Sources */,
+				D8F8E2A91AC52E8B00A6DA73 /* Character.swift in Sources */,
 				D8F8E2A51AC51A3200A6DA73 /* Editor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
