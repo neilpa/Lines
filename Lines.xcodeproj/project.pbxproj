@@ -16,6 +16,7 @@
 		D8F8E2AB1AC52F7400A6DA73 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2AA1AC52F7400A6DA73 /* String.swift */; };
 		D8F8E2AD1AC64B6100A6DA73 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2AC1AC64B6100A6DA73 /* Position.swift */; };
 		D8F8E2B01AC64FC500A6DA73 /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2AE1AC64F4700A6DA73 /* PositionTests.swift */; };
+		D8F8E2B21AC6517500A6DA73 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F8E2B11AC6517500A6DA73 /* Cursor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		D8F8E2AA1AC52F7400A6DA73 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D8F8E2AC1AC64B6100A6DA73 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		D8F8E2AE1AC64F4700A6DA73 /* PositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
+		D8F8E2B11AC6517500A6DA73 /* Cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				D8F8E2A81AC52E8B00A6DA73 /* Character.swift */,
-				D8F8E2AC1AC64B6100A6DA73 /* Position.swift */,
+				D8F8E2B11AC6517500A6DA73 /* Cursor.swift */,
 				D8F8E2A41AC51A3200A6DA73 /* Editor.swift */,
 				D8F8E2A61AC52ABC00A6DA73 /* Movement.swift */,
+				D8F8E2AC1AC64B6100A6DA73 /* Position.swift */,
 				D8F8E2AA1AC52F7400A6DA73 /* String.swift */,
 				D8F8E2861AC5163800A6DA73 /* Supporting Files */,
 			);
@@ -232,6 +235,7 @@
 				D8F8E2AB1AC52F7400A6DA73 /* String.swift in Sources */,
 				D8F8E2A91AC52E8B00A6DA73 /* Character.swift in Sources */,
 				D8F8E2A51AC51A3200A6DA73 /* Editor.swift in Sources */,
+				D8F8E2B21AC6517500A6DA73 /* Cursor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

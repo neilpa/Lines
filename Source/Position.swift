@@ -17,6 +17,11 @@ public struct Position : Comparable {
         self.line = line
         self.column = column
     }
+
+    /// Advances `Position` by `character`
+    public func successor(character: Character) -> Position {
+        return character.isNewline ? Position(line + 1, 1) : Position(line, column + 1)
+    }
 }
 
 /// Compares two positions for equality
@@ -24,7 +29,7 @@ public func ==(lhs: Position, rhs: Position) -> Bool {
     return lhs.line == rhs.line && lhs.column == rhs.column
 }
 
-/// Determines `lhs` position is less than `rhs` position
+/// Determines if `lhs` position is less than `rhs` position
 public func <(lhs: Position, rhs: Position) -> Bool {
     return lhs.line < rhs.line || (lhs.line == rhs.line && lhs.column < rhs.column)
 }
