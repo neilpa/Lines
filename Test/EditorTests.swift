@@ -1,7 +1,7 @@
 //  Copyright (c) 2015 Neil Pankey. All rights reserved.
 
-import XCTest
 import Lines
+import XCTest
 
 final class EditorTests: XCTestCase {
 
