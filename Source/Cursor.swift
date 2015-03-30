@@ -22,7 +22,8 @@ public struct Cursor : BidirectionalIndexType {
 
     /// Retracts `Cursor` by a single character
     public func predecessor() -> Cursor {
-        return Cursor(string, index.predecessor(), position.predecessor(string[index]))
+        let previous = index.predecessor()
+        return Cursor(string, previous, position.predecessor(string[previous]))
     }
 
     /// Construct a `Cursor` for `string` at the given `index` and `position`
