@@ -1,6 +1,7 @@
 //  Copyright (c) 2015 Neil Pankey. All rights reserved.
 
-/// Track line and column number in a string
+/// Track line and column number in a string. Negative values represent offset
+/// from the end of lines and columns rather than the start.
 public struct Position : Comparable {
     /// 1-based line number in a string
     public let line: Int
@@ -21,6 +22,11 @@ public struct Position : Comparable {
     /// Advances `Position` by `character`
     public func successor(character: Character) -> Position {
         return character.isNewline ? Position(line + 1, 1) : Position(line, column + 1)
+    }
+
+    /// Retracts `Position` by `character`
+    public func predecessor(character: Character) -> Position {
+        return character.isNewline ? Position(line - 1, -1) : Position(line, column - 1)
     }
 }
 

@@ -1,7 +1,7 @@
 //  Copyright (c) 2015 Neil Pankey. All rights reserved.
 
-/// Proper cursor for a string that tracks character offset and line/column
-public struct Cursor : ForwardIndexType {
+/// Proper cursor for a string that tracks character index and line/column offset
+public struct Cursor : BidirectionalIndexType {
     /// Offset into the string
     public let index: String.Index
     /// Line and column in the string
@@ -18,6 +18,11 @@ public struct Cursor : ForwardIndexType {
     /// Advance `Cursor` by a single character
     public func successor() -> Cursor {
         return Cursor(string, index.successor(), position.successor(string[index]))
+    }
+
+    /// Retracts `Cursor` by a single character
+    public func predecessor() -> Cursor {
+        return Cursor(string, index.predecessor(), position.predecessor(string[index]))
     }
 
     /// Construct a `Cursor` for `string` at the given `index` and `position`
