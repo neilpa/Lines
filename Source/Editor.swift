@@ -113,3 +113,10 @@ public struct Editor {
         return !isEmpty(str) ? str.removeAtIndex(str.endIndex.predecessor()) : nil
     }
 }
+
+extension Editor : Printable {
+    /// Describe an `Editor`
+    public var description: String {
+        return head + "|" + tail
+    }
+}
